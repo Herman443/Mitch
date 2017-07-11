@@ -11,23 +11,23 @@
     </div>
   <% end %>
   
-
+<font color="#ffffff">
   <div class="field" style="max-width: 400px">
     <h5>Title:</h5>
     <%= form.text_field :title, class: "form-control input-lg" %>
   </div>
-
+</font>
   
-  
+  <font color="#ffffff">
   <div class="field" style="max-width: 400px">
     <h5>Artist:</h5>
     <%= form.text_field :artist, class: "form-control input-lg" %>
   </div>
+</font>
   
-  
-
+<font color="#ffffff">
   <div class="field" style="max-width: 400px">
-    <h5>Genre:</h5>
+    <h5>Genre:</h5></font>
     <%= form.select :genre, [["Alternativ rock", "Alternativ rock"],
                             ["Pop", "Pop"],
                             ["Rock", "Rock"],
@@ -40,11 +40,12 @@
                             ], prompt: "Select genre...", id: :song_genre %>
   </div>
 
+<font color="#ffffff">
   <div class="field" style="max-width: 400px">
     <h5>Youtube ID (Last part of youtube link, example: PMivT7MJ41M):</h5>
     <%= form.text_field :link, class: "form-control input-lg" %>
   </div>
-
+</font>
   <div class="actions">
     <%= form.submit %>
   </div>

@@ -4,9 +4,10 @@
 <div class="page-header" style="max-width: 400px">
   <h1><font color="#ffffff">Mitch <br><small>Post and Share great music</font></small></h1>
 </div>
-<div class="list-group" style="max-width: 400px">
+<div class="list-group" style="max-width: 400px"><b>
   <% @songs.each do |song| %>
     <%= link_to "#{song.title} - #{song.artist}", song, class: "list-group-item" %>
   <% end %>
+  </b>
 </div>
 </center>
