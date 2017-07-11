@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <center>
-<h1>Mitch</h1>
+<div class="page-header" style="max-width: 400px">
+  <h1>Mitch <br><small>Post and Share great music</small></h1>
+</div>
 <div class="list-group" style="max-width: 400px">
   <% @songs.each do |song| %>
     <%= link_to "#{song.title} - #{song.artist}", song, class: "list-group-item" %>
