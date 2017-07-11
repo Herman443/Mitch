@@ -23,7 +23,14 @@
 
   <div class="field">
     <%= form.label :genre %>
-    <%= form.text_field :genre, id: :song_genre %>
+    <%= form.select :genre, [["Alternativ rock", "Alternativ rock"],
+                            ["pop", "pop"],
+                            ["Rock", "Rock"],
+                            ["Techno", "Techno"],
+                            ["Jazz", "Jazz"],
+                            ["Blues", "Blues"],
+                            ["Classical", "Classical"]
+                            ], prompt: "Select genre..", id: :song_genre %>
   </div>
 
   <div class="field">
