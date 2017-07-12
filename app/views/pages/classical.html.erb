@@ -2,11 +2,11 @@
 
 <center>
 <div class="page-header" style="max-width: 400px">
-  <h1><font color="#ffffff">All songs</font></h1>
+  <h1><font color="#ffffff">Classical songs</font></h1>
 </div>
 
 <div class="list-group" style="max-width: 400px">
-  <% @songs.each do |song| %>
+  <% @classical_songs.each do |song| %>
     <%= link_to "#{song.title} - #{song.artist}", song, class: "list-group-item" %>
   <% end %>
 </div>

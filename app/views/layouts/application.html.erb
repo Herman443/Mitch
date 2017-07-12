@@ -53,13 +53,16 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Post new song", new_song_path %></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Genres <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><%= link_to 'Alt. Rock', alternative_rock_path %></li>
+            <li><%= link_to 'Pop', pop_path %></li>
+            <li><%= link_to 'Rock', rock_path %></li>
+            <li><%= link_to 'Techno', techno_path %></li>
+            <li><%= link_to 'Jazz', jazz_path %></li>
+            <li><%= link_to 'Classical', classical_path %></li>
+            <li><%= link_to 'Rap', rap_path %></li>
+            <li><%= link_to 'Hip Hop', hip_hop_path %></li>
           </ul>
         </li>
       </ul>
